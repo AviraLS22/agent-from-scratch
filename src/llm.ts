@@ -1,4 +1,4 @@
-import { zodFunction } from 'openai/helpers/zod'
+import { zodFunction } from 'openai/helpers/zod' 
 import { z } from 'zod'
 import type { AIMessage } from '../types'
 import { openai } from './ai'
