@@ -29,7 +29,7 @@ export const runLLM = async ({  // function to run the LLM model
     temperature,
     tools: formattedTools,
     tool_choice: 'auto',                                                   // auto chooses the best tool to use in the model
-    parallel_tool_calls: false,
+    parallel_tool_calls: false,                                            // parallel_tool_calls is set to false to make the tool calls in sequence
   })
 
   return response.choices[0].message                                          // return the first response of the model 
